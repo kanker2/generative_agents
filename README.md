@@ -18,6 +18,7 @@ Pasos:
 	git lfs pull
 
 Ejemplo de uso (En intérprete de Python):
+
 	from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 	model = AutoModelForCausalLM.from_pretrained('.')
 	tokenizer = AutoTokenizer.from_pretrained(".")
