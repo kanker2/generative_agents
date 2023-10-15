@@ -8,6 +8,24 @@ Los modelos que se plantea usar son los que surgen del paper <a href="https://ar
 En concreto nos enfocaremos en adaptarlo al modelo <a href="https://huggingface.co/roneneldan/TinyStories-33M">TinyStories-33M</a> disponible en HuggingFace. Este modelo se puede ejecutar en un PC como los que disponemos, por lo que es una gran ventaja.
 
 El uso de este nuevo LM implica preocuparnos por su ejecución. Por ello los requisitos previos aumentan. Para ejecutar el LM necesitamos la librería transformers de Python. Para atender a estos nuevos requisitos creamos el archivo requirements_LM.txt
+Tras la instalación de dichos paquetes haría falta clonar el repositorio de HuggingFace.
+Pasos:
+
+	sudo apt get install git-lfs
+	git lfs install
+	cd TinyStories-33M
+	git clone https://huggingface.co/roneneldan/TinyStories-33M
+	git lfs pull
+
+Ejemplo de uso (En intérprete de Python):
+	from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
+	model = AutoModelForCausalLM.from_pretrained('.')
+	tokenizer = AutoTokenizer.from_pretrained(".")
+	prompt = "Once upon a time there was"
+	input_ids = tokenizer.encode(prompt, return_tensors="pt")
+	output = model.generate(input_ids, max_length = 1000, num_beams=1)
+	output_text = tokenizer.decode(output[0], skip_special_tokens=True)
+	print(output_text)
 
 # Generative Agents: Interactive Simulacra of Human Behavior 
 
