@@ -5,7 +5,7 @@ Debido a la limitación de recursos intentamos adaptar este trabajo para ser cap
 Estos no permiten el surgimiento de resultados como los descritos en el <a href="https://arxiv.org/abs/2304.03442">paper</a> asociado a este repositorio, pero nos permitirán ejecutar el código sin incurrir en grandes gastos.
 
 Los modelos que se plantea usar son los que surgen del paper <a href="https://arxiv.org/abs/2305.07759">Tiny Stories</a>, que explora modelos mucho más pequeños con la intención de ver en que momento estos son capaces de adquirir habilidades del lenguaje y cierta capacidad de razonamiento.
-En concreto nos enfocaremos en adaptarlo al modelo <a href="https://huggingface.co/roneneldan/TinyStories-33M">TinyStories-33M</a> disponible en Hugginge
+En concreto nos enfocaremos en adaptarlo al modelo <a href="https://huggingface.co/roneneldan/TinyStories-33M">TinyStories-33M</a> disponible en HuggingFace. Este modelo se puede ejecutar en un PC como los que disponemos, por lo que es una gran ventaja.
 
 # Generative Agents: Interactive Simulacra of Human Behavior 
 
