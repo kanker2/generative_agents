@@ -7,7 +7,7 @@ Estos no permiten el surgimiento de resultados como los descritos en el <a href=
 Los modelos que se plantea usar son los que surgen del paper <a href="https://arxiv.org/abs/2305.07759">Tiny Stories</a>, que explora modelos mucho más pequeños con la intención de ver en que momento estos son capaces de adquirir habilidades del lenguaje y cierta capacidad de razonamiento.
 En concreto nos enfocaremos en adaptarlo al modelo <a href="https://huggingface.co/roneneldan/TinyStories-33M">TinyStories-33M</a> disponible en HuggingFace. Este modelo se puede ejecutar en un PC como los que disponemos, por lo que es una gran ventaja.
 
-El uso de este nuevo LM implica preocuparnos por su ejecución. Por ello los requisitos previos aumentan. Para ejecutar el LM necesitamos la librería transformers de Python. Para atender a estos nuevos requisitos creamos el archivo requirements_lm.txt
+El uso de este nuevo LM implica preocuparnos por su ejecución. Por ello los requisitos previos aumentan. Para ejecutar el LM necesitamos la librería transformers de Python. Para atender a estos nuevos requisitos creamos el archivo requirements_LM.txt
 
 # Generative Agents: Interactive Simulacra of Human Behavior 
 
